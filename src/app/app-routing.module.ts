@@ -6,7 +6,9 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    children: []
+    children: [
+      { path: '', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule) },
+    ]
   }
 ];
 
