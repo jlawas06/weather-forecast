@@ -1,0 +1,9 @@
+<div class="px-0 md:px-48">
+  <app-user-details
+    *ngIf="auth.user$ | async as user"
+    [user]="user"
+  ></app-user-details>
+  <app-get-weather-form
+    (displayWeatherClicked)="onClickDisplayWeather($event)"
+  ></app-get-weather-form>
+</div>
