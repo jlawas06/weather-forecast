@@ -8,6 +8,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule) },
+      { path: 'weather', loadChildren: () => import('./features/weather/weather.module').then(m => m.WeatherModule) },
     ]
   }
 ];
