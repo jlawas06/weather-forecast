@@ -26,7 +26,7 @@ export class WeatherComponent implements OnInit {
   }
 
   fetchWeatherData() {
-    this.weather$ = this.weatherService.getWeatherDateByCity(this.city);
+    this.weather$ = this.weatherService.getWeatherDetailsByCity(this.city);
   }
 
   onGoBack() {

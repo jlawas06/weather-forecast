@@ -11,7 +11,7 @@ export class WeatherService {
 
   constructor(private http: HttpClient) { }
 
-  getWeatherDateByCity(city: string): Observable<IWeather> {
+  getWeatherDetailsByCity(city: string): Observable<IWeather> {
     return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${environment.weatherApiKey}`)
       .pipe(map((x: any) => {
         return {
