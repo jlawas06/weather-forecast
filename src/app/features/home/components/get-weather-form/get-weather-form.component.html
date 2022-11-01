@@ -10,6 +10,7 @@
       ></path>
     </svg>
     <input
+      [(ngModel)]="city"
       type="search"
       name="name"
       id="name"
@@ -18,7 +19,7 @@
     />
   </div>
   <button
-    type="button"
+    type="button" (click)="onClickDisplayWeather()"
     class="mt-4 inline-flex items-center rounded-md border border-transparent bg-gray-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
   >
     Display Weather

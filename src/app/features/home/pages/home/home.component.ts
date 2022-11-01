@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@auth0/auth0-angular';
 
@@ -8,10 +9,12 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public auth: AuthService) { }
+  constructor(public auth: AuthService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.auth.user$.subscribe(console.log);
   }
 
+  onClickDisplayWeather(city: string) {
+    
+  }
 }

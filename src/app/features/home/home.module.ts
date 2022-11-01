@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { LandingComponent } from './pages/landing/landing.component';
-import { HomeComponent } from './pages/home/home.component';
-import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { FormsModule } from '@angular/forms';
 import { GetWeatherFormComponent } from './components/get-weather-form/get-weather-form.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { HomeRoutingModule } from './home-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { GetWeatherFormComponent } from './components/get-weather-form/get-weath
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class HomeModule { }
