@@ -5,10 +5,10 @@
 export const environment = {
   production: false,
   auth0Config: {
-    domain: 'dev-deq6ojynt4zmhmkj.au.auth0.com',
-    clientId: 'cYbwtFYVvDjSUbttA1ZnEWD11fUobxOa'
+    domain: '<DOMAIN>',
+    clientId: '<CLIENT_ID>'
   },
-  weatherApiKey: 'e9e4f4db55c9d842c080be6fe7aa6fda'
+  weatherApiKey: '<API_KEY>'
 };
 
 /*
